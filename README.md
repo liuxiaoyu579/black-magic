@@ -8,7 +8,8 @@
 
 int main()
 {
-	WSADATA wsaData;
+	 
+	 WSADATA wsaData;
 	WSAStartup(MAKEWORD(2,2),&wsaData);//初始化DLL
 	
 	SOCKET f_sock=socket(AF_INET,SOCK_DGRAM,0);//套接字 
@@ -49,7 +50,8 @@ int main()
 
 int main()
 {
-	LoadLibrary("dllDemo.dll");
+	 
+	 LoadLibrary("dllDemo.dll");
 	WSADATA WSAData;
 	WSAStartup(MAKEWORD(2,2),&WSAData);
 	
